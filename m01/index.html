@@ -2,6 +2,19 @@
 <html lang="en">
 <head>
     <title>Module 01</title>
+    <style>
+        .image-row {
+            display: flex;           
+            justify-content: center; 
+            gap: 10px;                
+            flex-wrap: nowrap;        
+        }
+
+        .small-img {
+            width: 150px;             
+            height: auto;             
+        }
+    </style>
 </head>
 <body>
     <h1>Module 01: Introduction to HTML</h1>
@@ -17,15 +30,14 @@
     </figure>
 
     <h4>More Recipes:</h4>
-<p class="image-row">
-    <img src="roasted_chicken.jpg" alt="Roasted Chicken" title="Roasted Chicken" class="small-img">
-    <img src="tomato_soup.jpg" alt="Tomato Soup" title="Tomato Soup" class="small-img">
-    <img src="Fettuccine-Alfredo-Recipe-16.jpg" alt="Fettuccine Alfredo" title="Fettuccine Alfredo" class="small-img">
-    <img src="sauces.jpg" alt="Sauces" title="Sauces" class="small-img">
-    <img src="Fried_rice.jpg" alt="Fried Rice" title="Fried Rice" class="small-img">
-</p>
-
-
+    <div class="image-row">
+        <img src="roasted_chicken.jpg" alt="Roasted Chicken" title="Roasted Chicken" class="small-img">
+        <img src="tomato_soup.jpg" alt="Tomato Soup" title="Tomato Soup" class="small-img">
+        <img src="Fettuccine-Alfredo-Recipe-16.jpg" alt="Fettuccine Alfredo" title="Fettuccine Alfredo" class="small-img">
+        <img src="sauces.jpg" alt="Sauces" title="Sauces" class="small-img">
+        <img src="Fried_rice.jpg" alt="Fried Rice" title="Fried Rice" class="small-img">
+    </div>
 </body>
 </html>
+
 
