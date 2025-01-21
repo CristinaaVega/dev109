@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -7,61 +7,69 @@
 </head>
 <body>
 
-    <h1 style="text-align: center;">HTML Table Example</h1>
+    <h1>HTML Table Example</h1>
 
-    <table style="border: 1px solid black; border-collapse: collapse; width: 100%; text-align: left; font-family: Arial, sans-serif;">
+    <table border="1">
+        <!-- First Row: Title -->
         <tr>
-            <th colspan="3" style="text-align: center; font-size: 24px; padding: 10px; border: 1px solid black;">Meal Planner</th>
-            <th style="text-align: center; font-size: 18px; padding: 10px; border: 1px solid black;">Recipe Index #</th>
+            <th colspan="3"><h1>Meal Planner</h1></th>
+            <th><h2>Recipe Index #</h2></th>
         </tr>
+
+        <!-- Second Row: Picture -->
         <tr>
-            <td colspan="3" style="text-align: center; border: 1px solid black; padding: 10px;">
-                <img src="kitchen_image.jpg" alt="Kitchen with cooking tools and preparation area" style="width: 400px; height: auto;">
+            <td colspan="3">
+                <img src="Cute_kitchen.jpg" alt="Kitchen with meal preparation tools" width="300">
             </td>
-            <td rowspan="8" style="vertical-align: top; padding: 10px; border: 1px solid black;">
+            <td rowspan="6">
+                <b>Instructions</b><br>
                 Add the name of the recipe under the column "Recipe Name"
             </td>
         </tr>
+
+        <!-- Third Row: Week Starting -->
         <tr>
-            <th style="border: 1px solid black; padding: 10px;">Week Starting</th>
-            <td colspan="2" style="border: 1px solid black; padding: 10px;">2/15/2018</td>
+            <th>Week starting</th>
+            <th>2/15/2018</th>
+            <th></th>
+        </tr>
+
+        <!-- Fourth Row: Days and Recipes -->
+        <tr>
+            <th><b>Day of the Week</b></th>
+            <th colspan="2"><b>Recipe Name</b></th>
+        </tr>
+
+        <!-- Days and Recipes -->
+        <tr>
+            <td>Monday</td>
+            <td colspan="2">Lentils with avocado salad</td>
         </tr>
         <tr>
-            <th style="border: 1px solid black; padding: 10px;">Day of the Week</th>
-            <th colspan="2" style="border: 1px solid black; padding: 10px;">Recipe Name</th>
+            <td>Tuesday</td>
+            <td colspan="2">Roasted bell peppers pasta</td>
         </tr>
         <tr>
-            <td style="border: 1px solid black; padding: 10px;">Monday</td>
-            <td colspan="2" style="border: 1px solid black; padding: 10px;">Spinach Feta Pizza</td>
+            <td>Wednesday</td>
+            <td colspan="2">Tomato soup</td>
         </tr>
         <tr>
-            <td style="border: 1px solid black; padding: 10px;">Tuesday</td>
-            <td colspan="2" style="border: 1px solid black; padding: 10px;">My New Recipe</td>
+            <td>Thursday</td>
+            <td colspan="2">Miso soup</td>
         </tr>
         <tr>
-            <td style="border: 1px solid black; padding: 10px;">Wednesday</td>
-            <td colspan="2" style="border: 1px solid black; padding: 10px;"></td>
+            <td>Friday</td>
+            <td colspan="2">Fried rice</td>
         </tr>
         <tr>
-            <td style="border: 1px solid black; padding: 10px;">Thursday</td>
-            <td colspan="2" style="border: 1px solid black; padding: 10px;"></td>
+            <td>Saturday</td>
+            <td colspan="2">Steak with veggies</td>
         </tr>
         <tr>
-            <td style="border: 1px solid black; padding: 10px;">Friday</td>
-            <td colspan="2" style="border: 1px solid black; padding: 10px;"></td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid black; padding: 10px;">Saturday</td>
-            <td colspan="2" style="border: 1px solid black; padding: 10px;"></td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid black; padding: 10px;">Sunday</td>
-            <td colspan="2" style="border: 1px solid black; padding: 10px;"></td>
+            <td>Sunday</td>
+            <td colspan="2">Roasted chicken with potatoes and veggies</td>
         </tr>
     </table>
 
 </body>
-</html>
-
-</body>
-</html>
+</html> 
