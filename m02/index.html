@@ -9,38 +9,28 @@
 
     <h1>HTML Table Example</h1>
 
-    <table border="1">
-        <!-- First Row: Title -->
+    <table style="border: 1px solid black; border-collapse: collapse;">
         <tr>
-            <th colspan="3"><h1>Meal Planner</h1></th>
-            <th><h2>Recipe Index #</h2></th>
+            <th colspan="3" style="font-size: 24px; text-align: center;">Meal Planner</th>
+            <th style="font-size: 18px; text-align: center;">Recipe Index #</th>
         </tr>
-
-        <!-- Second Row: Picture -->
         <tr>
-            <td colspan="3">
+            <td colspan="3" style="text-align: center;">
                 <img src="Cute_kitchen.jpg" alt="Kitchen with meal preparation tools" width="300">
             </td>
-            <td rowspan="6">
+            <td rowspan="9" style="vertical-align: top;">
                 <b>Instructions</b><br>
                 Add the name of the recipe under the column "Recipe Name"
             </td>
         </tr>
-
-        <!-- Third Row: Week Starting -->
         <tr>
-            <th>Week starting</th>
-            <th>2/15/2018</th>
-            <th></th>
+            <th style="text-align: left;">Week starting</th>
+            <td colspan="2">2/15/2018</td>
         </tr>
-
-        <!-- Fourth Row: Days and Recipes -->
         <tr>
-            <th><b>Day of the Week</b></th>
-            <th colspan="2"><b>Recipe Name</b></th>
+            <th style="text-align: left;">Day of the Week</th>
+            <th colspan="2" style="text-align: left;">Recipe Name</th>
         </tr>
-
-        <!-- Days and Recipes -->
         <tr>
             <td>Monday</td>
             <td colspan="2">Lentils with avocado salad</td>
