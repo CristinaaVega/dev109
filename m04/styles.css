@@ -1,3 +1,4 @@
+/* General Styles */
 * {
     font-family: Arial, Verdana, sans-serif;
     color: #665544;
@@ -7,37 +8,35 @@
     box-sizing: border-box;
 }
 
-/* Include the Happy Times font */
-@import url("https://fontlibrary.org/face/happy-times");
-
 /* Body Background Image */
 body {
     width: 90%;
     margin: 0 auto;
-    background-image: url("https://th.bing.com/th/id/OSK.HEROYbfXwReNG9_iv5pMt0YUkYxeTHAQVRkYY7yMMkIM_mI?rs=1&pid=ImgDetMain"); 
+    background-image: url("https://th.bing.com/th/id/OSK.HEROYbfXwReNG9_iv5pMt0YUkYxeTHAQVRkYY7yMMkIM_mI?rs=1&pid=ImgDetMain");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Ensures image stays in place */
+    background-attachment: fixed; /* Keeps background static */
 }
 
 /* Logo Font */
 .logo {
     font-family: 'Happy Times at the IKOB Regular', serif;
-    font-size: 2.5em;
+    font-size: 3em; /* Increased size */
     color: #fdd835;
+    margin-bottom: 20px; /* Added space below the logo */
 }
 
 /* Navigation Menu */
 #nav {
-    background-color: #b35bb3; /* Different color for navigation */
-    padding: 0.5em 0;
+    background-color: #b35bb3;
+    padding: 1em 0; /* Increased padding */
     list-style-type: none;
     display: flex;
     justify-content: center;
 }
 
 #nav li {
-    padding: 0.5em 1em;
+    padding: 1em 1.5em; /* Increased padding */
     display: inline;
 }
 
@@ -55,45 +54,46 @@ body {
 /* Content Layout */
 #content {
     overflow: auto;
+    padding-top: 20px; /* Adds space below navigation */
 }
 
-/* Feature Section with Image */
+/* Feature Section */
 #feature {
-    height: 10em;
-    margin-bottom: 1em;
-    background-color: #8CC63E; /* Different color */
-    background-image: url('https://www.freeiconspng.com/uploads/customers-icon-3.png'); /* Feature icon */
+    min-height: 15em; /* Increased height */
+    margin: 2em 0; /* Adds spacing */
+    background-color: #8CC63E;
+    background-image: url("https://www.freeiconspng.com/uploads/customers-icon-3.png");
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
 }
 
-/* Columns with Different Colors */
+/* Columns */
+.column1, .column2, .column3 {
+    width: 30%; /* Adjusted for spacing */
+    float: left;
+    min-height: 12em; /* Increased height */
+    margin: 1.5%;
+    padding: 2em;
+}
+
 .column1 {
-    background-color: #f4a7b9; /* Light Pink */
+    background-color: #f4a7b9;
 }
 
 .column2 {
-    background-color: #8b0032; /* Dark Red */
+    background-color: #8b0032;
 }
 
 .column3 {
-    background-color: #c68e8e; /* Light Brown */
-}
-
-/* General Column Styling */
-.column1, .column2, .column3 {
-    width: 31.3%;
-    float: left;
-    margin: 1%;
-    padding: 1em;
+    background-color: #c68e8e;
 }
 
 /* Footer */
 #footer {
-    background-color: #b35bb3; /* Same as nav */
-    padding: 0.5em 0;
-    margin: 1%;
+    background-color: #b35bb3;
+    padding: 1.5em 0;
+    margin-top: 2em; /* Added space before footer */
     color: white;
 }
 
@@ -102,6 +102,7 @@ body {
     .article {
         width: 100%;
         float: none;
+        min-height: 10em; /* Adjusted for mobile */
         margin-bottom: 1em;
     }
 
