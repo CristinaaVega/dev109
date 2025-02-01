@@ -7,19 +7,23 @@
     box-sizing: border-box;
 }
 
+/* Include the Happy Times font */
+@import url("https://fontlibrary.org/face/happy-times");
+
 /* Body Background Image */
 body {
     width: 90%;
     margin: 0 auto;
-    background-image: url('background.jpg'); /* Replace with actual image */
+    background-image: url("https://th.bing.com/th/id/OSK.HEROYbfXwReNG9_iv5pMt0YUkYxeTHAQVRkYY7yMMkIM_mI?rs=1&pid=ImgDetMain"); 
     background-size: cover;
     background-position: center;
+    background-attachment: fixed; /* Ensures image stays in place */
 }
 
 /* Logo Font */
 .logo {
-    font-family: 'HappyTimesattheIKOBRegular', sans-serif;
-    font-size: 2em;
+    font-family: 'HappyTimesattheIKOBRegular', cursive;
+    font-size: 2.5em;
     color: #fdd835;
 }
 
@@ -58,7 +62,7 @@ body {
     height: 10em;
     margin-bottom: 1em;
     background-color: #8CC63E; /* Different color */
-    background-image: url('feature-image.png'); /* Replace with actual image */
+    background-image: url('https://www.freeiconspng.com/uploads/customers-icon-3.png'); /* Feature icon */
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
