@@ -1,1 +1,112 @@
+* {
+    font-family: Arial, Verdana, sans-serif;
+    color: #665544;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Body Background Image */
+body {
+    width: 90%;
+    margin: 0 auto;
+    background-image: url('background.jpg'); /* Replace with actual image */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Logo Font */
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    color: #fdd835;
+}
+
+/* Navigation Menu */
+#nav {
+    background-color: #b35bb3; /* Different color for navigation */
+    padding: 0.5em 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+#nav li {
+    padding: 0.5em 1em;
+    display: inline;
+}
+
+#nav li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#nav li a:hover {
+    color: #ffeb3b;
+    text-decoration: underline;
+}
+
+/* Content Layout */
+#content {
+    overflow: auto;
+}
+
+/* Feature Section with Image */
+#feature {
+    height: 10em;
+    margin-bottom: 1em;
+    background-color: #8CC63E; /* Different color */
+    background-image: url('feature-image.png'); /* Replace with actual image */
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+/* Columns with Different Colors */
+.column1 {
+    background-color: #f4a7b9; /* Light Pink */
+}
+
+.column2 {
+    background-color: #8b0032; /* Dark Red */
+}
+
+.column3 {
+    background-color: #c68e8e; /* Light Brown */
+}
+
+/* General Column Styling */
+.column1, .column2, .column3 {
+    width: 31.3%;
+    float: left;
+    margin: 1%;
+    padding: 1em;
+}
+
+/* Footer */
+#footer {
+    background-color: #b35bb3; /* Same as nav */
+    padding: 0.5em 0;
+    margin: 1%;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .article {
+        width: 100%;
+        float: none;
+        margin-bottom: 1em;
+    }
+
+    #nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #nav li {
+        display: block;
+    }
+}
