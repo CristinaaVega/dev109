@@ -59,7 +59,8 @@ body {
 
 /* Feature Section */
 #feature {
-    min-height: 15em; /* Increased height */
+    font-size: 2em
+    min-height: 15em; 
     margin: 2em 0; /* Adds spacing */
     background-color: #8CC63E;
     background-image: url("https://www.freeiconspng.com/uploads/customers-icon-3.png");
@@ -70,6 +71,7 @@ body {
 
 /* Columns */
 .column1, .column2, .column3 {
+    font-size: 1.8em;
     width: 30%; /* Adjusted for spacing */
     float: left;
     min-height: 12em; /* Increased height */
