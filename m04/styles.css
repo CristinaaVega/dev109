@@ -21,22 +21,22 @@ body {
 /* Logo Font */
 .logo {
     font-family: 'Happy Times at the IKOB Regular', serif;
-    font-size: 3em; /* Increased size */
+    font-size: 3em; /* Increase size */
     color: #fdd835;
-    margin-bottom: 20px; /* Added space below the logo */
+    margin-bottom: 20px; /* Adds space below the logo */
 }
 
 /* Navigation Menu */
 #nav {
     background-color: #b35bb3;
-    padding: 1em 0; /* Increased padding */
+    padding: 1em 0; /* Increasing padding */
     list-style-type: none;
     display: flex;
     justify-content: center;
 }
 
 #nav li {
-    padding: 1em 1.5em; /* Increased padding */
+    padding: 1em 1.5em; /* Increases padding */
     display: inline;
 }
 
