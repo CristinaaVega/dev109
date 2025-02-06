@@ -1,1 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4e2d8;
+}
+
+#page {
+    margin: 20px auto;
+    width: 400px;
+    background: #ffcc66;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+#teacher {
+    width: 150px;
+    display: block;
+    margin: 10px auto;
+}
+
+#blackboard {
+    background: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#output {
+    font-size: 18px;
+    line-height: 1.8;
+}
 
