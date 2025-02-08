@@ -16,3 +16,6 @@ for (let i = 1; i <= 10; i++) {
 // Display results inside the blackboard
 document.getElementById("output").innerHTML = output;
 
+// Adjust blackboard height dynamically based on content
+let blackboard = document.getElementById("blackboard");
+blackboard.style.height = document.getElementById("output").scrollHeight + "px";
