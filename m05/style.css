@@ -10,7 +10,7 @@ body {
 /* Main Container */
 #container {
     position: relative;
-    width: 800px;
+    width: 900px;
     margin: 50px auto;
     padding-top: 20px;
 }
@@ -33,13 +33,21 @@ p {
     color: #444;
 }
 
+/* Content Container (for Blackboard & Teacher) */
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+}
+
 /* Blackboard */
 #blackboard {
     background-color: #2f4f4f;
     color: white;
     width: 450px;
-    height: 320px;
-    margin: 20px auto;
+    height: 350px;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -49,20 +57,19 @@ p {
 }
 
 h2 {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     text-decoration: underline;
 }
 
 #output {
     font-size: 18px;
-    line-height: 1.8;
+    line-height: 2;
 }
 
 /* Teacher Position */
 #teacher {
-    position: absolute;
-    right: -120px;
-    bottom: -10px;
     width: 200px;
+    margin-left: 40px; /* Moves the teacher to the right */
 }
+
 
