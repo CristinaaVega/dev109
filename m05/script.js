@@ -1,73 +1,18 @@
-/* Background Theme */
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #ffcc66;
-    margin: 0;
-    padding: 0;
+// Prompt user for a number (0-10)
+let number = prompt("Enter a number between 0 and 10:");
+
+// Convert input to an integer and validate
+number = parseInt(number);
+if (isNaN(number) || number < 0 || number > 10) {
+    number = 0; // Default to 0 if input is invalid
 }
 
-/* Main Container */
-#container {
-    position: relative;
-    width: 900px;
-    margin: 50px auto;
-    padding-top: 20px;
+// Generate multiplication table
+let output = "";
+for (let i = 1; i <= 10; i++) {
+    output += `${i} x ${number} = ${i * number} <br>`;
 }
 
-/* Header (Title + Subtitle) */
-#header {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-}
+// Display results inside the blackboard
+document.getElementById("output").innerHTML = output;
 
-h1 {
-    font-size: 40px;
-    color: #333;
-    text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-}
-
-p {
-    font-style: italic;
-    color: #444;
-}
-
-/* Content Container (for Blackboard & Teacher) */
-#content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-top: 20px;
-}
-
-/* Blackboard */
-#blackboard {
-    background-color: #2f4f4f;
-    color: white;
-    width: 450px;
-    height: 350px;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 18px;
-    font-family: "Courier New", monospace;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-h2 {
-    margin-bottom: 15px;
-    text-decoration: underline;
-}
-
-#output {
-    font-size: 18px;
-    line-height: 2;
-}
-
-/* Teacher Position */
-#teacher {
-    width: 200px;
-    margin-left: 40px; /* Moves the teacher to the right */
-}
