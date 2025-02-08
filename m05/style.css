@@ -33,7 +33,7 @@ p {
     color: #444;
 }
 
-/* Content Container (for Blackboard & Teacher) */
+/* Content Layout */
 #content {
     display: flex;
     align-items: center;
@@ -42,12 +42,12 @@ p {
     margin-top: 20px;
 }
 
-/* Blackboard */
+/* Blackboard (DYNAMIC HEIGHT) */
 #blackboard {
     background-color: #2f4f4f;
     color: white;
-    width: 450px;
-    height: 350px;
+    width: 500px;
+    min-height: 400px; /* Increase minimum height */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -56,20 +56,15 @@ p {
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-h2 {
-    margin-bottom: 15px;
-    text-decoration: underline;
-}
-
+/* Ensure the height adjusts dynamically */
 #output {
     font-size: 18px;
     line-height: 2;
+    min-height: 300px; /* Ensure it doesn't overflow */
 }
 
 /* Teacher Position */
 #teacher {
-    width: 200px;
-    margin-left: 40px; /* Moves the teacher to the right */
+    width: 220px;
+    margin-left: 50px;
 }
-
-
