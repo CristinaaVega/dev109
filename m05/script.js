@@ -16,6 +16,7 @@ for (let i = 1; i <= 12; i++) { // 12 rows instead of 10
 // Display results inside the blackboard
 document.getElementById("output").innerHTML = output;
 
-// Adjust blackboard height dynamically
+// Adjust blackboard height dynamically to fit content
 let blackboard = document.getElementById("blackboard");
-blackboard.style.height = document.getElementById("output").scrollHeight + "px";
+let outputHeight = document.getElementById("output").scrollHeight;
+blackboard.style.height = `${outputHeight + 50}px`; // Adds extra padding
