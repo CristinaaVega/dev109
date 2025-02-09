@@ -1,31 +1,21 @@
-// Function to prompt user for a valid number
-function getUserNumber() {
-    let num;
-    do {
-        num = prompt("Enter a number between 0 and 10:");
-        if (num === null || num.trim() === "") num = 0; // Handle cancel or empty input
-        num = parseInt(num);
-    } while (isNaN(num) || num < 0 || num > 10); // Keep asking until valid input
+// Prompt user for a number (0-10)
+let number = prompt("Enter a number between 0 and 10:");
 
-    return num;
+// Validate input and set default if invalid
+number = parseInt(number);
+if (isNaN(number) || number < 0 || number > 10) {
+    number = 0;
 }
-
-// Get valid user input
-let number = getUserNumber();
 
 // Generate multiplication table
-let output = "<p>";
-for (let i = 1; i <= 10; i++) {
+let output = "";
+for (let i = 1; i <= 12; i++) { // 12 rows instead of 10
     output += `${i} x ${number} = ${i * number} <br>`;
 }
-output += "</p>";
 
 // Display results inside the blackboard
-let outputDiv = document.getElementById("output");
-outputDiv.innerHTML = output;
+document.getElementById("output").innerHTML = output;
 
-// Adjust blackboard height dynamically for better layout
+// Adjust blackboard height dynamically
 let blackboard = document.getElementById("blackboard");
-blackboard.style.minHeight = "auto";
-blackboard.style.height = outputDiv.scrollHeight + "px";
-blackboard.style.transition = "height 0.5s ease-in-out"; // Smooth resizing
+blackboard.style.minHeight = document.getElementById("output").scrollHeight + "px";
