@@ -5,27 +5,22 @@ body {
     background-color: #ffcc66;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center content vertically */
 }
 
 /* Main Container */
 #container {
-    width: 900px;
-    margin: 50px auto;
-}
-
-/* Header Styling */
-#header {
     text-align: center;
 }
 
-h1 {
-    font-size: 40px;
-    color: #333;
-}
-
-p {
-    font-style: italic;
-    color: #444;
+/* Title Image (Replaces text title) */
+#title-image {
+    width: 500px; /* Adjust size */
+    max-width: 100%;
+    margin-bottom: 20px;
 }
 
 /* Blackboard & Teacher Layout */
@@ -33,7 +28,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    gap: 40px; /* Space between elements */
 }
 
 /* Blackboard Styling */
@@ -41,7 +36,7 @@ p {
     background-color: #2f4f4f;
     color: white;
     width: 500px;
-    min-height: 480px; /* Increased height to fit content */
+    min-height: 480px; /* Increased height */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -61,8 +56,9 @@ p {
 
 /* Teacher Image */
 #teacher {
-    width: 200px;
-    margin-left: 50px;
+    width: 220px;
+    height: auto;
+    position: relative;
+    left: 0px; /* Adjusts teacher position */
 }
-
 
