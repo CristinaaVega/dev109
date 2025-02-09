@@ -67,4 +67,5 @@ p {
 #teacher {
     width: 220px;
     margin-left: 50px;
+    mix-blend-mode: multiply; /* Removes white backgrounds */
 }
