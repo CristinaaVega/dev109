@@ -18,4 +18,4 @@ document.getElementById("output").innerHTML = output;
 
 // Adjust blackboard height dynamically
 let blackboard = document.getElementById("blackboard");
-blackboard.style.minHeight = document.getElementById("output").scrollHeight + "px";
+blackboard.style.height = document.getElementById("output").scrollHeight + "px";
