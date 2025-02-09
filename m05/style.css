@@ -31,16 +31,16 @@ body {
     gap: 40px; /* Space between elements */
 }
 
-/* Blackboard Styling */
+/* Blackboard Styling - Increased Height */
 #blackboard {
     background-color: #2f4f4f;
     color: white;
     width: 500px;
-    min-height: 480px; /* Increased height */
-    padding: 20px;
+    min-height: 550px; /* Increased height */
+    padding: 30px;
     border-radius: 10px;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     font-family: "Courier New", monospace;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
     display: flex;
@@ -50,7 +50,7 @@ body {
 
 /* Multiplication Table Text */
 #output {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 2;
 }
 
@@ -61,4 +61,5 @@ body {
     position: relative;
     left: 0px; /* Adjusts teacher position */
 }
+
 
