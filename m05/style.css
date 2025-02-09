@@ -1,4 +1,4 @@
-/* Background Theme */
+/* General Page Styling */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-/* Main Container */
+/* Container for Header & Content */
 #container {
     position: relative;
     width: 900px;
@@ -15,11 +15,9 @@ body {
     padding-top: 20px;
 }
 
-/* Header (Title + Subtitle) */
+/* Header (Title & Subtitle) */
 #header {
     text-align: center;
-    font-size: 24px;
-    font-weight: bold;
 }
 
 h1 {
@@ -33,7 +31,7 @@ p {
     color: #444;
 }
 
-/* Content Layout */
+/* Blackboard & Teacher Layout */
 #content {
     display: flex;
     align-items: center;
@@ -42,30 +40,30 @@ p {
     margin-top: 20px;
 }
 
-/* Blackboard (DYNAMIC HEIGHT) */
+/* Blackboard Styling */
 #blackboard {
     background-color: #2f4f4f;
     color: white;
     width: 500px;
-    min-height: 400px; /* Increase minimum height */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     font-size: 18px;
     font-family: "Courier New", monospace;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    min-height: 400px; /* Allows resizing for content */
 }
 
-/* Ensure the height adjusts dynamically */
+/* Text Output Formatting */
 #output {
     font-size: 18px;
     line-height: 2;
-    min-height: 300px; /* Ensure it doesn't overflow */
 }
 
-/* Teacher Position */
+/* Teacher Image Styling */
 #teacher {
-    width: 220px;
+    width: 200px;
     margin-left: 50px;
     mix-blend-mode: multiply; /* Removes white backgrounds */
 }
+
