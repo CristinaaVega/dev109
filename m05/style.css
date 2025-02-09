@@ -16,7 +16,7 @@ body {
     text-align: center;
 }
 
-/* Title Image (Replaces text title) */
+/* Title Image */
 #title-image {
     width: 500px; /* Adjust size */
     max-width: 100%;
@@ -31,12 +31,11 @@ body {
     gap: 40px; /* Space between elements */
 }
 
-/* Blackboard Styling - Increased Height */
+/* Blackboard Styling - Now Resizes Properly */
 #blackboard {
     background-color: #2f4f4f;
     color: white;
     width: 500px;
-    min-height: 550px; /* Increased height */
     padding: 30px;
     border-radius: 10px;
     text-align: center;
@@ -46,20 +45,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: auto; /* Ensures auto-adjustment */
+    overflow: hidden; /* Prevents text overflow */
 }
 
 /* Multiplication Table Text */
 #output {
     font-size: 22px;
     line-height: 2;
+    white-space: nowrap; /* Keeps text formatting */
+    text-align: center;
 }
-
-/* Teacher Image */
-#teacher {
-    width: 220px;
-    height: auto;
-    position: relative;
-    left: 0px; /* Adjusts teacher position */
-}
-
 
