@@ -13,9 +13,16 @@
         #rhombusContainer {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            align-items: center;
             font-family: monospace;
             white-space: pre;
+            line-height: 1;
+        }
+        .rhombus-section {
+            text-align: right;
+        }
+        .rhombus-section.right {
+            text-align: left;
         }
     </style>
 </head>
@@ -50,12 +57,12 @@
     <button onclick="generateRhombus()">Display Rhombus</button>
 
     <div id="rhombusContainer">
-        <div id="upLeft"></div>
-        <div id="upRight"></div>
+        <div id="upLeft" class="rhombus-section"></div>
+        <div id="upRight" class="rhombus-section right"></div>
     </div>
     <div id="rhombusContainer">
-        <div id="downLeft"></div>
-        <div id="downRight"></div>
+        <div id="downLeft" class="rhombus-section"></div>
+        <div id="downRight" class="rhombus-section right"></div>
     </div>
 
     <script src="script.js"></script> 
