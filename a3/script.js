@@ -4,72 +4,56 @@ function generateRhombus() {
     let colorOdd = document.getElementById("colorOdd").value;
     let symbol = document.getElementById("symbol").value;
 
-    // Generate all four parts of the rhombus
-    upLeft(height, colorEven, colorOdd, symbol);
-    upRight(height, colorEven, colorOdd, symbol);
-    downLeft(height, colorEven, colorOdd, symbol);
-    downRight(height, colorEven, colorOdd, symbol);
-}
+    let rhombusLeft = "";
+    let rhombusRight = "";
 
-// Function for top-left part of rhombus
-function upLeft(height, colorEven, colorOdd, symbol) {
-    let rhombus = "";
     for (let i = 0; i < height; i++) {
-        rhombus += "<p>";
-        for (let j = height - i; j > 0; j--) {
-            rhombus += "&nbsp;&nbsp;";  // Spaces for alignment
+        let leftSpaces = "&nbsp;".repeat(height - i); // Spaces for left side alignment
+        let rightSpaces = "&nbsp;".repeat(i * 2); // Spaces to bring right side closer
+        
+        rhombusLeft += "<p>" + leftSpaces;
+        rhombusRight += "<p>";
+
+        for (let j = 0; j <= i; j++) {
+            let color = j % 2 === 0 ? colorOdd : colorEven;
+            rhombusLeft += `<span style='color:${color};'>${symbol}</span> `;
         }
         for (let j = 0; j <= i; j++) {
             let color = j % 2 === 0 ? colorOdd : colorEven;
-            rhombus += `<span style='color:${color};'>${symbol}</span> `;
+            rhombusRight += `<span style='color:${color};'>${symbol}</span> `;
         }
-        rhombus += "</p>";
-    }
-    document.getElementById("upLeft").innerHTML = rhombus;
-}
 
-// Function for top-right part of rhombus
-function upRight(height, colorEven, colorOdd, symbol) {
-    let rhombus = "";
-    for (let i = 0; i < height; i++) {
-        rhombus += "<p>";
-        for (let j = 0; j <= i; j++) {
-            let color = j % 2 === 0 ? colorOdd : colorEven;
-            rhombus += `<span style='color:${color};'>${symbol}</span> `;
-        }
-        rhombus += "</p>";
+        rhombusLeft += "</p>";
+        rhombusRight += "</p>";
     }
-    document.getElementById("upRight").innerHTML = rhombus;
-}
 
-// Function for bottom-left part of rhombus
-function downLeft(height, colorEven, colorOdd, symbol) {
-    let rhombus = "";
+    let rhombusBottomLeft = "";
+    let rhombusBottomRight = "";
+
     for (let i = height; i > 0; i--) {
-        rhombus += "<p>";
-        for (let j = height - i; j > 0; j--) {
-            rhombus += "&nbsp;&nbsp;";  // Spaces for alignment
+        let leftSpaces = "&nbsp;".repeat(height - i); // Spaces for left side alignment
+        let rightSpaces = "&nbsp;".repeat(i * 2); // Spaces to bring right side closer
+        
+        rhombusBottomLeft += "<p>" + leftSpaces;
+        rhombusBottomRight += "<p>";
+
+        for (let j = 0; j < i; j++) {
+            let color = j % 2 === 0 ? colorOdd : colorEven;
+            rhombusBottomLeft += `<span style='color:${color};'>${symbol}</span> `;
         }
         for (let j = 0; j < i; j++) {
             let color = j % 2 === 0 ? colorOdd : colorEven;
-            rhombus += `<span style='color:${color};'>${symbol}</span> `;
+            rhombusBottomRight += `<span style='color:${color};'>${symbol}</span> `;
         }
-        rhombus += "</p>";
+
+        rhombusBottomLeft += "</p>";
+        rhombusBottomRight += "</p>";
     }
-    document.getElementById("downLeft").innerHTML = rhombus;
+
+    document.getElementById("upLeft").innerHTML = rhombusLeft;
+    document.getElementById("upRight").innerHTML = rhombusRight;
+    document.getElementById("downLeft").innerHTML = rhombusBottomLeft;
+    document.getElementById("downRight").innerHTML = rhombusBottomRight;
 }
 
-// Function for bottom-right part of rhombus
-function downRight(height, colorEven, colorOdd, symbol) {
-    let rhombus = "";
-    for (let i = height; i > 0; i--) {
-        rhombus += "<p>";
-        for (let j = 0; j < i; j++) {
-            let color = j % 2 === 0 ? colorOdd : colorEven;
-            rhombus += `<span style='color:${color};'>${symbol}</span> `;
-        }
-        rhombus += "</p>";
-    }
-    document.getElementById("downRight").innerHTML = rhombus;
-}
 
