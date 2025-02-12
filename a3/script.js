@@ -4,55 +4,36 @@ function generateRhombus() {
     let colorOdd = document.getElementById("colorOdd").value;
     let symbol = document.getElementById("symbol").value;
 
-    let rhombusLeft = "";
-    let rhombusRight = "";
+    let rhombusTop = "";
+    let rhombusBottom = "";
 
+    // Generate the top half of the rhombus
     for (let i = 0; i < height; i++) {
-        let leftSpaces = "&nbsp;".repeat(height - i); // Spaces for left side alignment
-        
-        rhombusLeft += "<p>" + leftSpaces;
-        rhombusRight += "<p>";
-
-        for (let j = 0; j <= i; j++) {
+        let spaces = "&nbsp;".repeat(height - i); // Spaces to align top part
+        rhombusTop += "<p>" + spaces;
+        for (let j = 0; j <= i * 2; j++) {
             let color = j % 2 === 0 ? colorOdd : colorEven;
-            rhombusLeft += `<span style='color:${color};'>${symbol}</span> `;
+            rhombusTop += `<span style='color:${color};'>${symbol}</span>`;
         }
-        for (let j = 0; j <= i; j++) {
-            let color = j % 2 === 0 ? colorOdd : colorEven;
-            rhombusRight += `<span style='color:${color};'>${symbol}</span> `;
-        }
-
-        rhombusLeft += "</p>";
-        rhombusRight += "</p>";
+        rhombusTop += "</p>";
     }
 
-    let rhombusBottomLeft = "";
-    let rhombusBottomRight = "";
-
-    for (let i = height; i > 0; i--) {
-        let leftSpaces = "&nbsp;".repeat(height - i); // Spaces for left side alignment
-        
-        rhombusBottomLeft += "<p>" + leftSpaces;
-        rhombusBottomRight += "<p>";
-
-        for (let j = 0; j < i; j++) {
+    // Generate the bottom half of the rhombus
+    for (let i = height - 2; i >= 0; i--) {
+        let spaces = "&nbsp;".repeat(height - i); // Spaces to align bottom part
+        rhombusBottom += "<p>" + spaces;
+        for (let j = 0; j <= i * 2; j++) {
             let color = j % 2 === 0 ? colorOdd : colorEven;
-            rhombusBottomLeft += `<span style='color:${color};'>${symbol}</span> `;
+            rhombusBottom += `<span style='color:${color};'>${symbol}</span>`;
         }
-        for (let j = 0; j < i; j++) {
-            let color = j % 2 === 0 ? colorOdd : colorEven;
-            rhombusBottomRight += `<span style='color:${color};'>${symbol}</span> `;
-        }
-
-        rhombusBottomLeft += "</p>";
-        rhombusBottomRight += "</p>";
+        rhombusBottom += "</p>";
     }
 
-    document.getElementById("upLeft").innerHTML = rhombusLeft;
-    document.getElementById("upRight").innerHTML = rhombusRight;
-    document.getElementById("downLeft").innerHTML = rhombusBottomLeft;
-    document.getElementById("downRight").innerHTML = rhombusBottomRight;
+    // Display the full rhombus
+    document.getElementById("upLeft").innerHTML = rhombusTop;
+    document.getElementById("downLeft").innerHTML = rhombusBottom;
 }
+
 
 
 
