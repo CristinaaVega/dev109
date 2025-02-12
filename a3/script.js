@@ -9,7 +9,6 @@ function generateRhombus() {
 
     for (let i = 0; i < height; i++) {
         let leftSpaces = "&nbsp;".repeat(height - i); // Spaces for left side alignment
-        let rightSpaces = "&nbsp;".repeat(i * 2); // Spaces to bring right side closer
         
         rhombusLeft += "<p>" + leftSpaces;
         rhombusRight += "<p>";
@@ -32,7 +31,6 @@ function generateRhombus() {
 
     for (let i = height; i > 0; i--) {
         let leftSpaces = "&nbsp;".repeat(height - i); // Spaces for left side alignment
-        let rightSpaces = "&nbsp;".repeat(i * 2); // Spaces to bring right side closer
         
         rhombusBottomLeft += "<p>" + leftSpaces;
         rhombusBottomRight += "<p>";
@@ -55,5 +53,6 @@ function generateRhombus() {
     document.getElementById("downLeft").innerHTML = rhombusBottomLeft;
     document.getElementById("downRight").innerHTML = rhombusBottomRight;
 }
+
 
 
