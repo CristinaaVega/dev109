@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Week 6 - Rhombus Assignment">
     <title>Rhombus Generator</title>
+
+    <!-- Inline CSS since no external CSS file is used -->
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
         }
-        #rhombusContainer {
+        .rhombusContainer {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -56,11 +58,12 @@
 
     <button onclick="generateRhombus()">Display Rhombus</button>
 
-    <div id="rhombusContainer">
+    <!-- Fixing the duplicate ID issue by using class instead -->
+    <div class="rhombusContainer">
         <div id="upLeft" class="rhombus-section"></div>
         <div id="upRight" class="rhombus-section right"></div>
     </div>
-    <div id="rhombusContainer">
+    <div class="rhombusContainer">
         <div id="downLeft" class="rhombus-section"></div>
         <div id="downRight" class="rhombus-section right"></div>
     </div>
@@ -68,4 +71,3 @@
     <script src="script.js"></script> 
 </body>
 </html>
-
