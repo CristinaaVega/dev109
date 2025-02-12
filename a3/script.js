@@ -4,36 +4,37 @@ function generateRhombus() {
     let colorOdd = document.getElementById("colorOdd").value;
     let symbol = document.getElementById("symbol").value;
 
-    let rhombusTop = "";
-    let rhombusBottom = "";
+    let rhombus = "";
 
     // Generate the top half of the rhombus
     for (let i = 0; i < height; i++) {
-        let spaces = "&nbsp;".repeat(height - i); // Spaces to align top part
-        rhombusTop += "<p>" + spaces;
-        for (let j = 0; j <= i * 2; j++) {
+        let spaces = "&nbsp;".repeat(height - i - 1); // Spaces for centering
+        rhombus += "<p>" + spaces;
+
+        for (let j = 0; j < 2 * i + 1; j++) { // Ensure correct number of symbols per row
             let color = j % 2 === 0 ? colorOdd : colorEven;
-            rhombusTop += `<span style='color:${color};'>${symbol}</span>`;
+            rhombus += `<span style='color:${color};'>${symbol}</span>`;
         }
-        rhombusTop += "</p>";
+
+        rhombus += "</p>";
     }
 
     // Generate the bottom half of the rhombus
     for (let i = height - 2; i >= 0; i--) {
-        let spaces = "&nbsp;".repeat(height - i); // Spaces to align bottom part
-        rhombusBottom += "<p>" + spaces;
-        for (let j = 0; j <= i * 2; j++) {
+        let spaces = "&nbsp;".repeat(height - i - 1); // Spaces for centering
+        rhombus += "<p>" + spaces;
+
+        for (let j = 0; j < 2 * i + 1; j++) { // Ensure correct number of symbols per row
             let color = j % 2 === 0 ? colorOdd : colorEven;
-            rhombusBottom += `<span style='color:${color};'>${symbol}</span>`;
+            rhombus += `<span style='color:${color};'>${symbol}</span>`;
         }
-        rhombusBottom += "</p>";
+
+        rhombus += "</p>";
     }
 
-    // Display the full rhombus
-    document.getElementById("upLeft").innerHTML = rhombusTop;
-    document.getElementById("downLeft").innerHTML = rhombusBottom;
+    // Display the full rhombus in one container
+    document.getElementById("rhombusContainer").innerHTML = rhombus;
 }
-
 
 
 
