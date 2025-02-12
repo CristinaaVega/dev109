@@ -58,15 +58,10 @@
 
     <button onclick="generateRhombus()">Display Rhombus</button>
 
-    <!-- Fixing the duplicate ID issue by using class instead -->
-    <div class="rhombusContainer">
-        <div id="upLeft" class="rhombus-section"></div>
-        <div id="upRight" class="rhombus-section right"></div>
-    </div>
-    <div class="rhombusContainer">
-        <div id="downLeft" class="rhombus-section"></div>
-        <div id="downRight" class="rhombus-section right"></div>
-    </div>
+    <div id="rhombusContainer">
+    <div id="upLeft"></div> <!-- This now holds the full rhombus -->
+    <div id="downLeft"></div> <!-- This holds the bottom half -->
+</div>
 
     <script src="script.js"></script> 
 </body>
