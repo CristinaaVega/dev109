@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Week 6 - Rhombus Assignment">
     <title>Rhombus Generator</title>
-
-    <!-- Inline CSS for styling -->
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
         }
         #rhombusContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-family: monospace;
             white-space: pre;
-            line-height: 1.2;
-            text-align: center;
+            line-height: 1;
+        }
+        .rhombus-section {
+            text-align: right;
+        }
+        .rhombus-section.right {
+            text-align: left;
         }
     </style>
 </head>
@@ -50,10 +56,17 @@
 
     <button onclick="generateRhombus()">Display Rhombus</button>
 
-    <!-- Rhombus Display Section -->
-    <div id="rhombusContainer"></div>
+    <div id="rhombusContainer">
+        <div id="upLeft" class="rhombus-section"></div>
+        <div id="upRight" class="rhombus-section right"></div>
+    </div>
+    <div id="rhombusContainer">
+        <div id="downLeft" class="rhombus-section"></div>
+        <div id="downRight" class="rhombus-section right"></div>
+    </div>
 
     <script src="script.js"></script> 
 </body>
 </html>
+
 
