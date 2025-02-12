@@ -8,10 +8,10 @@ function generateRhombus() {
 
     // Generate the top half of the rhombus
     for (let i = 0; i < height; i++) {
-        let spaces = "&nbsp;".repeat(height - i - 1); // Spaces for centering
+        let spaces = "&nbsp;".repeat(height - i); // Spaces for centering
         rhombus += "<p>" + spaces;
 
-        for (let j = 0; j < 2 * i + 1; j++) { // Ensure correct number of symbols per row
+        for (let j = 0; j <= 2 * i; j++) { // Ensuring correct number of symbols
             let color = j % 2 === 0 ? colorOdd : colorEven;
             rhombus += `<span style='color:${color};'>${symbol}</span>`;
         }
@@ -21,10 +21,10 @@ function generateRhombus() {
 
     // Generate the bottom half of the rhombus
     for (let i = height - 2; i >= 0; i--) {
-        let spaces = "&nbsp;".repeat(height - i - 1); // Spaces for centering
+        let spaces = "&nbsp;".repeat(height - i); // Spaces for centering
         rhombus += "<p>" + spaces;
 
-        for (let j = 0; j < 2 * i + 1; j++) { // Ensure correct number of symbols per row
+        for (let j = 0; j <= 2 * i; j++) { // Ensuring correct number of symbols
             let color = j % 2 === 0 ? colorOdd : colorEven;
             rhombus += `<span style='color:${color};'>${symbol}</span>`;
         }
@@ -32,9 +32,8 @@ function generateRhombus() {
         rhombus += "</p>";
     }
 
-    // Display the full rhombus in one container
+    // Display the full rhombus
     document.getElementById("rhombusContainer").innerHTML = rhombus;
 }
-
 
 
