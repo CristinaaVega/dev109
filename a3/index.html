@@ -6,25 +6,17 @@
     <meta name="description" content="Week 6 - Rhombus Assignment">
     <title>Rhombus Generator</title>
 
-    <!-- Inline CSS since no external CSS file is used -->
+    <!-- Inline CSS for styling -->
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
         }
-        .rhombusContainer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        #rhombusContainer {
             font-family: monospace;
             white-space: pre;
-            line-height: 1;
-        }
-        .rhombus-section {
-            text-align: right;
-        }
-        .rhombus-section.right {
-            text-align: left;
+            line-height: 1.2;
+            text-align: center;
         }
     </style>
 </head>
@@ -58,11 +50,10 @@
 
     <button onclick="generateRhombus()">Display Rhombus</button>
 
+    <!-- Rhombus Display Section -->
     <div id="rhombusContainer"></div>
-    <div id="upLeft"></div> <!-- This now holds the full rhombus -->
-    <div id="downLeft"></div> <!-- This holds the bottom half -->
-</div>
 
     <script src="script.js"></script> 
 </body>
 </html>
+
