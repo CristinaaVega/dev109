@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Week 6 - Rhombus Assignment">
+    <meta name="description" content="Week 6 - BC - Rhombus">
+    <meta charset="utf-8">
     <title>Rhombus Generator</title>
     <style>
         body {
@@ -12,19 +11,25 @@
         }
         #rhombusContainer {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: center;
             font-family: monospace;
             white-space: pre;
-            line-height: 1;
+            line-height: 1.2;
+            margin-top: 20px;
+        }
+        .rhombus-section {
+            display: inline-block;
+            text-align: center;
+            min-width: 50px;
         }
     </style>
 </head>
 <body>
-    <h1>Your Name - Rhombus Generator</h1>  
 
-    <label>Enter the height of the rhombus:</label><br>
-    <input type="number" id="rHeight" value="5" min="1" required>
+    <h1>Rhombus Generator</h1>  
+
+    <label>What is the size of Rhombus?</label><br>
+    <input type="text" id="rHeight" value="5" size="5">
     <br><br>
 
     <label>Choose color for Even position:</label><br>
@@ -48,11 +53,25 @@
         <option value="@">@</option>
     </select><br><br>
 
-    <button onclick="generateRhombus()">Display Rhombus</button>
+    <button onclick="createRhombus(
+        document.getElementById('rHeight').value,
+        document.getElementById('colorEven').value,
+        document.getElementById('colorOdd').value,
+        document.getElementById('symbol').value
+    );">Display Rhombus</button>
 
-    <div id="rhombusContainer"></div>
+    <!-- Properly Structured Rhombus Sections -->
+    <div id="rhombusContainer">
+        <div class="rhombus-section" id="upLeft"></div>
+        <div class="rhombus-section" id="upRight"></div>
+    </div>
+    <div id="rhombusContainer">
+        <div class="rhombus-section" id="downLeft"></div>
+        <div class="rhombus-section" id="downRight"></div>
+    </div>
 
-    <script src="script.js"></script> 
+    <script src="script.js"></script>
+
 </body>
 </html>
 
