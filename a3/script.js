@@ -1,37 +1,69 @@
-function generateRhombus() {
-    let height = parseInt(document.getElementById("rHeight").value);
-    let colorEven = document.getElementById("colorEven").value;
-    let colorOdd = document.getElementById("colorOdd").value;
-    let symbol = document.getElementById("symbol").value;
+function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
+    upLeft(pHeight, pColorEven, pColorOdd, pSymbol);
+    upRight(pHeight, pColorEven, pColorOdd, pSymbol);
+    downLeft(pHeight, pColorEven, pColorOdd, pSymbol);
+    downRight(pHeight, pColorEven, pColorOdd, pSymbol);
+}
 
-    let rhombusHTML = "";
+function upLeft(pHeight, pColorEven, pColorOdd, pSymbol) {
+    let rLine = "";
+    for (let i = 0; i < pHeight; i++) {
+        rLine += "<p style='text-align: right;'>";
 
-    // Generate top half
-    for (let i = 0; i < height; i++) {
-        let spaces = " ".repeat(height - i); // Spaces for alignment
-        let lineHTML = spaces;
-
-        for (let j = 0; j <= i * 2; j++) {
-            let color = j % 2 === 0 ? colorEven : colorOdd;
-            lineHTML += `<span style="color:${color};">${symbol}</span>`;
+        for (let j = 0; j <= i; j++) {
+            let color = j % 2 === 0 ? pColorEven : pColorOdd;
+            rLine += `<span style='color:${color};'>${pSymbol}</span>`;
         }
-        rhombusHTML += `<div style="white-space: pre;">${lineHTML}</div>`;
+
+        rLine += "</p>";
     }
+    document.getElementById("upLeft").innerHTML = rLine;
+}
 
-    // Generate bottom half
-    for (let i = height - 2; i >= 0; i--) {
-        let spaces = " ".repeat(height - i); // Spaces for alignment
-        let lineHTML = spaces;
+function upRight(pHeight, pColorEven, pColorOdd, pSymbol) {
+    let rLine = "";
+    for (let i = 0; i < pHeight; i++) {
+        rLine += "<p style='text-align: left;'>";
 
-        for (let j = 0; j <= i * 2; j++) {
-            let color = j % 2 === 0 ? colorEven : colorOdd;
-            lineHTML += `<span style="color:${color};">${symbol}</span>`;
+        for (let j = 0; j <= i; j++) {
+            let color = j % 2 === 0 ? pColorEven : pColorOdd;
+            rLine += `<span style='color:${color};'>${pSymbol}</span>`;
         }
-        rhombusHTML += `<div style="white-space: pre;">${lineHTML}</div>`;
-    }
 
-    // Set the rhombus in the container
-    document.getElementById("rhombusContainer").innerHTML = rhombusHTML;
+        rLine += "</p>";
+    }
+    document.getElementById("upRight").innerHTML = rLine;
+}
+
+function downLeft(pHeight, pColorEven, pColorOdd, pSymbol) {
+    let rLine = "";
+    for (let i = pHeight - 1; i >= 0; i--) {
+        rLine += "<p style='text-align: right;'>";
+
+        for (let j = 0; j <= i; j++) {
+            let color = j % 2 === 0 ? pColorEven : pColorOdd;
+            rLine += `<span style='color:${color};'>${pSymbol}</span>`;
+        }
+
+        rLine += "</p>";
+    }
+    document.getElementById("downLeft").innerHTML = rLine;
+}
+
+
+function downRight(pHeight, pColorEven, pColorOdd, pSymbol) {
+    let rLine = "";
+    for (let i = pHeight - 1; i >= 0; i--) {
+        rLine += "<p style='text-align: left;'>";
+
+        for (let j = 0; j <= i; j++) {
+            let color = j % 2 === 0 ? pColorEven : pColorOdd;
+            rLine += `<span style='color:${color};'>${pSymbol}</span>`;
+        }
+
+        rLine += "</p>";
+    }
+    document.getElementById("downRight").innerHTML = rLine;
 }
 
 
