@@ -1,4 +1,6 @@
-/* General Styles */
+/* ========================================
+   GENERAL STYLES
+======================================== */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,19 +10,60 @@ body {
     color: white;
 }
 
-/* Header */
+/* ========================================
+   HEADER
+======================================== */
 header {
     text-align: center;
     padding: 50px;
     background: rgba(0, 0, 0, 0.6);
 }
-/* Styling for Content Section */
+
+/* ========================================
+   NAVIGATION
+======================================== */
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* ========================================
+   MAIN CONTENT
+======================================== */
 .content {
     text-align: center;
     padding: 20px;
 }
 
-/* Centering the Gallery */
+/* Welcome Section */
+main h2 {
+    margin-top: 20px;
+}
+
+main p {
+    font-size: 16px;
+}
+
+/* ========================================
+   IMAGE GALLERY SECTION
+======================================== */
 .image-gallery {
     display: flex;
     justify-content: center; /* Centers images horizontally */
@@ -49,39 +92,16 @@ header {
     border-radius: 8px; /* Rounded image corners */
 }
 
-/* Navigation */
-nav {
-    background: rgba(0, 0, 0, 0.8);
-    text-align: center;
-    padding: 10px 0;
+/* Profile Image */
+.profile {
+    width: 200px;
+    border-radius: 50%;
+    margin: 20px 0;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-/* Welcome Section */
-main h2 {
-    margin-top: 20px;
-}
-
-main p {
-    font-size: 16px;
-}
-
-/* Colored Tables for Future Images */
+/* ========================================
+   COLORED BOXES FOR FUTURE IMAGES
+======================================== */
 .image-section {
     display: flex;
     justify-content: center;
@@ -104,16 +124,10 @@ main p {
 .box4 { background: #ffcc99; }  /* Light Orange */
 .box5 { background: #cc99ff; }  /* Light Purple */
 
-/* Footer */
-footer {
-    background: #222;
-    color: white;
-    padding: 15px;
-    margin-top: 20px;
-}
-
-/* Artifacts Section */
-.artifact {
+/* ========================================
+   ARTIFACTS SECTION
+======================================== */
+.artifact, .course {
     background: rgba(255, 255, 255, 0.1);
     padding: 15px;
     margin: 10px auto;
@@ -122,15 +136,18 @@ footer {
     text-align: center;
 }
 
-.artifact h3 a {
+.artifact h3 a, .course h3 a {
     color: #4fa3d1;
     text-decoration: none;
 }
 
-.artifact h3 a:hover {
+.artifact h3 a:hover, .course h3 a:hover {
     text-decoration: underline;
 }
-/* Validation Page Styling */
+
+/* ========================================
+   VALIDATION PAGE STYLING
+======================================== */
 .validation-section {
     text-align: center;
     margin: 40px auto;
@@ -162,56 +179,9 @@ footer {
     border-radius: 5px;
 }
 
-.validation-table img {
-    width: 250px; /* Smaller size */
-    height: auto;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-}
-
-/* Course Section */
-
-.course {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    margin: 10px auto;
-    width: 80%;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.course h3 a {
-    color: #4fa3d1;
-    text-decoration: none;
-}
-
-.course h3 a:hover {
-    text-decoration: underline;
-}
-
-/* Profile Image */
-.profile {
-    width: 200px;
-    border-radius: 50%;
-    margin: 20px 0;
-}
-
-/* Image Gallery */
-.image-gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.image-gallery img {
-    width: 100%;
-    max-width: 250px;
-    border-radius: 10px;
-}
-
-/* Footer */
+/* ========================================
+   FOOTER
+======================================== */
 footer {
     background: rgba(0, 0, 0, 0.8);
     text-align: center;
