@@ -14,7 +14,51 @@ header {
     padding: 50px;
     background: rgba(0, 0, 0, 0.6);
 }
+/* Styling for Content Section */
+.content {
+    text-align: center;
+    padding: 20px;
+}
 
+/* Profile Picture Box */
+.profile-box {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #444;
+}
+
+/* Image Gallery Styling */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Gallery Box Design */
+.gallery-box {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(150, 150, 150, 0.2); /* Light gray box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.gallery-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
 /* Navigation */
 nav {
     background: rgba(0, 0, 0, 0.8);
