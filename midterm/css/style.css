@@ -29,7 +29,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 10px;
 }
 
 nav ul li a {
@@ -38,10 +38,44 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Content Section */
-.content {
-    text-align: center;
-    padding: 50px;
+/* Welcome Section */
+main h2 {
+    margin-top: 20px;
+}
+
+main p {
+    font-size: 16px;
+}
+
+/* Colored Tables for Future Images */
+.image-section {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.image-box {
+    width: 180px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+/* Different Colors for Each Box */
+.box1 { background: #ff9999; }  /* Light Red */
+.box2 { background: #99ccff; }  /* Light Blue */
+.box3 { background: #99ff99; }  /* Light Green */
+.box4 { background: #ffcc99; }  /* Light Orange */
+.box5 { background: #cc99ff; }  /* Light Purple */
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
 }
 /* Artifacts Section */
 .artifact {
