@@ -61,7 +61,40 @@ nav ul li a {
 .artifact h3 a:hover {
     text-decoration: underline;
 }
+/* Validation Page Styling */
+.validation-section {
+    text-align: center;
+    margin: 40px auto;
+    width: 80%;
+}
+
+.validation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background: #f8f8f8;
+}
+
+.validation-table th, .validation-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.validation-table th {
+    background-color: #6b5b95;
+    color: white;
+}
+
+.validation-table img {
+    width: 250px; /* Smaller size */
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
 /* Course Section */
+
 .course {
     background: rgba(255, 255, 255, 0.1);
     padding: 15px;
