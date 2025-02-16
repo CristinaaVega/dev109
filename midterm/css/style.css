@@ -77,6 +77,29 @@ footer {
     padding: 15px;
     margin-top: 20px;
 }
+/* Validation Page Styling */
+.validation-table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.validation-table th, .validation-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.validation-table th {
+    background-color: #444;
+    color: white;
+}
+
+.validation-table img {
+    width: 200px;  /* Resized to be smaller */
+    height: auto;
+    border-radius: 5px;
+}
 /* Artifacts Section */
 .artifact {
     background: rgba(255, 255, 255, 0.1);
