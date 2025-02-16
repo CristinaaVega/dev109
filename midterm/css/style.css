@@ -43,6 +43,42 @@ nav ul li a {
     text-align: center;
     padding: 50px;
 }
+/* Artifacts Section */
+.artifact {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.artifact h3 a {
+    color: #4fa3d1;
+    text-decoration: none;
+}
+
+.artifact h3 a:hover {
+    text-decoration: underline;
+}
+/* Course Section */
+.course {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.course h3 a {
+    color: #4fa3d1;
+    text-decoration: none;
+}
+
+.course h3 a:hover {
+    text-decoration: underline;
+}
 
 /* Profile Image */
 .profile {
