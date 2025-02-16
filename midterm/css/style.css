@@ -20,19 +20,7 @@ header {
     padding: 20px;
 }
 
-/* Profile Picture Box */
-.profile-box {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
 
-.profile {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 3px solid #444;
-}
 
 /* Image Gallery Styling */
 .image-gallery {
