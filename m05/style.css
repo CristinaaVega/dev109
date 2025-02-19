@@ -2,8 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background: url('../images/Background.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-color: #ffcc66;
     margin: 0;
     padding: 0;
     display: flex;
@@ -19,7 +18,7 @@ body {
 
 /* Title Image */
 #title-image {
-    width: 500px;
+    width: 500px; /* Adjust size */
     max-width: 100%;
     margin-bottom: 20px;
 }
@@ -29,10 +28,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 40px; /* Space between elements */
 }
 
-/* Blackboard Styling */
+/* Blackboard Styling - Now Resizes Properly */
 #blackboard {
     background-color: #2f4f4f;
     color: white;
@@ -46,14 +45,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: auto;
-    overflow: hidden;
+    min-height: auto; /* Ensures auto-adjustment */
+    overflow: hidden; /* Prevents text overflow */
 }
 
 /* Multiplication Table Text */
 #output {
     font-size: 22px;
     line-height: 2;
-    white-space: nowrap;
+    white-space: nowrap; /* Keeps text formatting */
     text-align: center;
 }
