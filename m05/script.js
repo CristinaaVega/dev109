@@ -7,9 +7,9 @@ if (isNaN(number) || number < 0 || number > 10) {
     number = 0;
 }
 
-// Generate multiplication table
-let output = "";
-for (let i = 1; i <= 12; i++) { // 12 rows instead of 10
+// Initialize message with heading
+let output = "<h2>Multiplication Table</h2>";
+for (let i = 1; i <= 12; i++) {
     output += `${i} x ${number} = ${i * number} <br>`;
 }
 
