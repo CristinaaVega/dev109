@@ -62,7 +62,7 @@ main p {
 }
 
 /* ========================================
-   IMAGE GALLERY SECTION (UPDATED)
+   IMAGE GALLERY SECTION 
 ======================================== */
 .image-gallery {
     display: flex;
@@ -101,30 +101,6 @@ main p {
     align-items: center;
     text-align: center;
 }
-/* ========================================
-   COLORED BOXES FOR FUTURE IMAGES
-======================================== */
-.image-section {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 30px auto;
-    flex-wrap: wrap;
-    width: 80%;
-}
-
-.image-box {
-    width: 180px;
-    height: 120px;
-    border-radius: 10px;
-}
-
-/* Different Colors for Each Box */
-.box1 { background: #ff9999; }  /* Light Red */
-.box2 { background: #99ccff; }  /* Light Blue */
-.box3 { background: #99ff99; }  /* Light Green */
-.box4 { background: #ffcc99; }  /* Light Orange */
-.box5 { background: #cc99ff; }  /* Light Purple */
 
 /* ========================================
    ARTIFACTS SECTION
