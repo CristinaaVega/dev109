@@ -1,4 +1,4 @@
-// Hotel Constructor Function
+
 function Hotel(name, rooms, booked) {
     this.name = name;
     this.rooms = rooms;
@@ -13,7 +13,7 @@ var quayHotel = new Hotel('Quay', 40, 25);
 var parkHotel = new Hotel('Park', 120, 77);
 var sunsetHotel = new Hotel('Sunset', 86, 10); // New hotel added
 
-// Update existing hotel details in HTML
+// Update existing hotel details 
 document.getElementById('hotel1').textContent = quayHotel.name + ' rooms: ' + quayHotel.checkAvailability();
 document.getElementById('hotel2').textContent = parkHotel.name + ' rooms: ' + parkHotel.checkAvailability();
 
