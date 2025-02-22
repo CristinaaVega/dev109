@@ -22,4 +22,3 @@ var elHotel3 = document.createElement('div'); // Create new div for Sunset Hotel
 elHotel3.textContent = sunsetHotel.name + ' rooms: ' + sunsetHotel.checkAvailability();
 elHotel3.id = 'hotel3'; // Assign an ID
 document.getElementById('info').appendChild(elHotel3); // Append to the info section
-
