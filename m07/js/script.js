@@ -1,4 +1,4 @@
-// Constructor function for hotel objects
+// Set up the object
 function Hotel(name, rooms, booked) {
   this.name = name;
   this.rooms = rooms;
@@ -8,7 +8,6 @@ function Hotel(name, rooms, booked) {
   };
 }
 
-// Create three hotel objects (including the new one)
 var quayHotel = new Hotel("Quay", 40, 25);
 var parkHotel = new Hotel("Park", 120, 77);
 var sunsetHotel = new Hotel("Sunset", 86, 10); // New hotel added
