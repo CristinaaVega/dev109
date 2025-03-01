@@ -1,28 +1,55 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="description" content="Artifact 04 - Contact Us">
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="css/style.css" href="style.css" />
-        <title>Artifact 04</title>
-    </head>
-    <body>
-        <form id="myform" action="thankyou.html" onsubmit="isValid();">
-            <p>
-                <label for='FirstName'>First Name:</label>
-                <input type="text" id="FirstName" name="FirstName" />
-            </p>
-            <div class="warning" id="fname"></div>
-            
-            <p>
-                <input type="submit" id="submit" name="submit" value="Submit">
-            </p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Artifact 04 - Contact Us">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artifact 04 - Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="myform" action="thankyou.html" onsubmit="return isValid();">
+        <h2>Contact Us</h2>
         
-            <div class="warning" id="submiterror"></div>
-        
-        </form>
+        <label for='FirstName'>First Name:</label>
+        <input type="text" id="FirstName" name="FirstName">
+        <div class="warning" id="fname"></div>
 
-        <script src="script.js" type="text/javascript"></script>
-    </body>
+        <label for='LastName'>Last Name:</label>
+        <input type="text" id="LastName" name="LastName">
+        <div class="warning" id="lname"></div>
+
+        <label for='email'>Email:</label>
+        <input type="email" id="email" name="email">
+        <div class="warning" id="emailError"></div>
+
+        <label for='phone'>Phone:</label>
+        <input type="text" id="phone" name="phone">
+        <div class="warning" id="phoneError"></div>
+
+        <label for='username'>Username:</label>
+        <input type="text" id="username" name="username">
+        <div class="warning" id="usernameError"></div>
+
+        <label for='password'>Password:</label>
+        <input type="password" id="password" name="password">
+        <div class="warning" id="passwordError"></div>
+
+        <label for='country'>Country:</label>
+        <select id="country" name="country">
+            <option value="">Select a country</option>
+            <option value="USA">United States</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">United Kingdom</option>
+        </select>
+        
+        <label for='zipcode'>Zip Code (USA Only):</label>
+        <input type="text" id="zipcode" name="zipcode">
+        <div class="warning" id="zipError"></div>
+
+        <input type="submit" id="submit" name="submit" value="Submit">
+        <div class="warning" id="submiterror"></div>
+    </form>
+    <script src="script.js"></script>
+</body>
 </html>
