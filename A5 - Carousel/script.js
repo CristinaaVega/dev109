@@ -9,11 +9,11 @@ const myImages = [
 
 // Corresponding captions
 const captions = [
-    "Red Image",
-    "Yellow Image",
-    "Orange Image",
-    "Pink Image",
-    "White Image"
+    "Red Tulip",
+    "Yellow Tulip",
+    "Orange Tulip",
+    "Pink Tulip",
+    "White Tulip"
 ];
 
 // Index of current image
