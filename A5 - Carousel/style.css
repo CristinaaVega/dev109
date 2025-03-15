@@ -20,7 +20,7 @@ h1 {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: #222;
+    background-color: #FFF0F5;
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -39,8 +39,8 @@ h1 {
 
 /* Image styling for mobile */
 img#slideshow {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
     border: 3px solid #444;
     border-radius: 10px;
