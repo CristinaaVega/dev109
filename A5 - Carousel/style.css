@@ -1,7 +1,7 @@
 /* General body styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    background-color: #FFF0F5;
     margin: 0;
     padding: 20px;
     display: flex;
@@ -21,7 +21,7 @@ h1 {
     top: 10px;
     left: 10px;
     background-color: #FFF0F5;
-    color: #fff;
+    color: #FFF0F5;
     padding: 5px 10px;
     border-radius: 5px;
     font-family: monospace;
