@@ -1,67 +1,74 @@
-/* General page styles */
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f7f7f7;
-    margin: 0;
-    padding: 20px;
+// Updated image paths to match the files you have
+const myImages = [
+    "images/Red.jpeg",
+    "images/Yellow.jpg",
+    "images/orange.jpg",
+    "images/pink.jpg",
+    "images/white.jpg"
+];
+
+// Corresponding captions
+const captions = [
+    "Red Image",
+    "Yellow Image",
+    "Orange Image",
+    "Pink Image",
+    "White Image"
+];
+
+// Index of current image
+let index = 0;
+let timerSeconds = 0;
+
+// Get elements from the DOM
+const imgElement = document.getElementById("slideshow");
+const captionElement = document.getElementById("caption");
+const timerDisplay = document.getElementById("timer");
+const autoCheckbox = document.getElementById("auto");
+
+// Update the image and caption
+function updateImage() {
+    imgElement.src = myImages[index];
+    imgElement.alt = captions[index];
+    captionElement.textContent = captions[index];
 }
 
-/* Heading style */
-h1 {
-    margin-bottom: 20px;
+// Show timer in mm:ss format
+function updateTimer() {
+    timerSeconds++;
+    const minutes = String(Math.floor(timerSeconds / 60)).padStart(2, '0');
+    const seconds = String(timerSeconds % 60).padStart(2, '0');
+    timerDisplay.textContent = `${minutes}:${seconds}`;
 }
 
-/* Carousel layout: buttons and image horizontally aligned */
-.carousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin: 20px 0;
+// Go to next image and reset timer
+function nextImage() {
+    index = (index + 1) % myImages.length;
+    timerSeconds = 0;
+    updateImage();
 }
 
-/* Main image styling */
-img#slideshow {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border: 3px solid #444;
-    border-radius: 10px;
+// Go to previous image and reset timer
+function previousImage() {
+    index = (index - 1 + myImages.length) % myImages.length;
+    timerSeconds = 0;
+    updateImage();
 }
 
-/* Navigation button styling */
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+// Automatically slide if checkbox is checked
+function autoSlide() {
+    if (autoCheckbox.checked) {
+        nextImage();
+    }
 }
 
-/* Caption below the image */
-#caption {
-    font-size: 18px;
-    margin-top: 10px;
-    font-weight: bold;
-}
+// Button event listeners
+document.getElementById("next").addEventListener("click", nextImage);
+document.getElementById("previous").addEventListener("click", previousImage);
 
-/* Timer display (top-left corner) */
-#timer {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: #222;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-family: monospace;
-}
+// Timer and auto-slide intervals
+setInterval(updateTimer, 1000);    // Update time every second
+setInterval(autoSlide, 4000);      // Check every 4 seconds if auto mode is on
 
-/* Validator icons at the bottom */
-.validators {
-    margin-top: 20px;
-}
-.validators img {
-    margin: 10px;
-    height: 40px;
-}
-
+// Initial load
+updateImage();
