@@ -1,1 +1,67 @@
+/* General page styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Heading style */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Carousel layout: buttons and image horizontally aligned */
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+/* Main image styling */
+img#slideshow {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 3px solid #444;
+    border-radius: 10px;
+}
+
+/* Navigation button styling */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Caption below the image */
+#caption {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Timer display (top-left corner) */
+#timer {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #222;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+/* Validator icons at the bottom */
+.validators {
+    margin-top: 20px;
+}
+.validators img {
+    margin: 10px;
+    height: 40px;
+}
 
