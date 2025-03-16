@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I Spy Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>I Spy Game</h1>
+  <p>Click on the objects when you find them:</p>
+
+  <!-- List of items to find -->
+  <ul id="object-list">
+    <li id="pot">Pot</li>
+    <li id="couch">Couch</li>
+    <li id="bed">Bed</li>
+    <li id="window">Window</li>
+    <li id="mirror1">Mirror (Left)</li>
+    <li id="mirror2">Mirror (Right)</li>
+  </ul>
+
+  <img src="barbie-dream-house-080ezo-1.jpg" usemap="#image-map" alt="Barbie Dreamhouse" class="spy-image">
+
+  <!-- Clickable map -->
+  <map name="image-map">
+    <area alt="pot" href="#" coords="212,624,25" shape="circle" id="area-pot">
+    <area alt="couch" href="#" coords="458,674,699,827" shape="rect" id="area-couch">
+    <area alt="bed" href="#" coords="476,229,688,450" shape="rect" id="area-bed">
+    <area alt="window" href="#" coords="159,483,76,648" shape="rect" id="area-window">
+    <area alt="mirror1" href="#" coords="375,307,35" shape="circle" id="area-mirror1">
+    <area alt="mirror2" href="#" coords="101,312,38" shape="circle" id="area-mirror2">
+  </map>
+
+  <!-- Replay button -->
+  <button onclick="replay()">Replay</button>
+
+  <!-- Link to JS -->
+  <script src="script.js"></script>
+</body>
+</html>
 
