@@ -1,1 +1,51 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #fdf6ff;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  color: #833c9f;
+}
+
+.spy-image {
+  max-width: 90%;
+  height: auto;
+  margin: 20px auto;
+  border: 3px solid #ccc;
+}
+
+ul#object-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+ul#object-list li {
+  font-size: 18px;
+  margin: 5px;
+}
+
+/* Style for found items */
+.found {
+  text-decoration: line-through;
+  color: gray;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #c35dc5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #9d45a4;
+}
 
