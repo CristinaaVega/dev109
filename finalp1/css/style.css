@@ -166,3 +166,8 @@ footer {
     padding: 15px;
     margin-top: 20px;
 }
+.dog-gif {
+  width: 300px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
