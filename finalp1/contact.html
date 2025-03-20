@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Contact Me</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="artifacts.html">Artifacts</a></li>
-                <li><a href="modules.html">Modules</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="creative.html">Creative Page</a></li>
-                <li><a href="validated.html">Validated</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <form action="thankyou.html" method="get" name="myContact">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+  <header>
+    <h1>Contact Me</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="artifacts.html">Artifacts</a></li>
+        <li><a href="modules.html">Modules</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="creative.html">Creative Page</a></li>
+        <li><a href="validated.html">Validated</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+  <main>
+    <section class="contact-section">
+      <h2>Let’s Connect 💌</h2>
+      <p>Fill out the form below and I’ll get back to you soon!</p>
+      
+      <form id="contactForm" action="thankyou.html" method="get" name="myContact">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
 
-            <label for="comment">Comment:</label>
-            <textarea id="comment" name="comment" required></textarea>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
 
-            <button type="submit">Submit</button>
-        </form>
-    </main>
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2025. All rights reserved.</p>
+  </footer>
 </body>
 </html>
